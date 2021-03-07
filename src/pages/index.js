@@ -1,29 +1,33 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React from 'react';
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import Container from '../components/container/Container';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const IndexPage = ({ location }) => {
+  return (
+    <Container location={location}>
+      <p>
+        My name is Eleanor Walker sit amet consectetur adipisicing elit.
+        Necessitatibus ratione odit earum eos architecto. Iste eum suscipit
+        dolores atque quidem!
+      </p>
+      <StaticImage
+        src="../images/home.jpg"
+        alt="fabric"
+        placeholder="dominantColor"
+        layout="constrained"
+        width={768}
+        aspectRatio={16 / 9}
+      />
+      <section>
+        <h2>Latest Journal Entries</h2>
+        <p>
+          Some of my most recent thoughts. You can view all of them on the{' '}
+          <Link to="/journal">journal page</Link>.
+        </p>
+      </section>
+    </Container>
+  );
+};
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
-
-export default IndexPage
+export default IndexPage;

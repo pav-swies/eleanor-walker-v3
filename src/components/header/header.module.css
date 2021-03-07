@@ -1,0 +1,74 @@
+.headerCompact {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(90% + 2px);
+  max-width: calc(var(--site-max-width) + 2px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--spacing-ant);
+  padding-bottom: var(--spacing-ant);
+  background-color: var(--color-secondary);
+  z-index: 10;
+}
+
+.headerLarge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--spacing-ant);
+  margin-bottom: var(--spacing-gerbil);
+  position: relative;
+}
+
+.headerTitle {
+  font-size: var(--font-size-mouse);
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: color 0.2s ease;
+}
+
+.headerTitle:hover {
+  color: var(--color-highlight);
+}
+
+.headerLargeTitle {
+  font-size: var(--font-size-mouse);
+  margin-top: 0;
+  margin-bottom: var(--spacing-ant);
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.headerNavList {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.headerNavItem + .headerNavItem {
+  margin-left: var(--spacing-ant);
+}
+
+@media screen and (min-width: 760px) {
+  .headerNavItem + .headerNavItem {
+    margin-left: var(--spacing-gerbil);
+  }
+}
+
+.headerNavLink {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: var(--font-size-ant);
+  text-transform: lowercase;
+}
+
+.headerNavLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}

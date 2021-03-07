@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  branch: main
+site_url: https://elsofia.co.uk/
+display_url: https://elsofia.co.uk/
+media_folder: static/img
+public_folder: /img
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '-'
+collections:
+  - name: 'global'
+    label: 'Global'
+    folder: 'content/global'
+    create: false
+    fields:
+      - { label: 'field', name: 'field', widget: 'text' }
+  - name: 'home'
+    label: 'Home Page'
+    folder: 'content/home'
+    create: false
+    fields:
+      - { label: 'Introduction', name: 'introduction', widget: 'text' }
+  - name: 'journal'
+    label: 'Journal'
+    folder: 'content/journal'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'journal' }
+  - name: 'work'
+    label: 'Work'
+    folder: 'content/work'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'work' }

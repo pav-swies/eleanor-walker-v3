@@ -1,0 +1,85 @@
+:root {
+  --site-max-width: 768px;
+
+  /* Font Sizes */
+  --font-size-flea: 0.8rem;
+  --font-size-ant: 1rem;
+  --font-size-beetle: 1.2rem;
+  --font-size-mouse: 1.5rem;
+  --font-size-gerbil: 2rem;
+
+  /* Spacing */
+  --spacing-flea: 0.5rem;
+  --spacing-ant: 1rem;
+  --spacing-mouse: 2rem;
+  --spacing-gerbil: 3rem;
+  --spacing-cat: 4rem;
+  --spacing-dog: 5rem;
+  --spacing-horse: 6rem;
+  --spacing-whale: 8rem;
+
+  /* Colours */
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-light: #757575;
+  --color-highlight: #ec6f59;
+}
+
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('./fonts/CrimsonPro.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('./fonts/CrimsonPro-Italic.woff2') format('woff2');
+}
+
+::selection {
+  background-color: var(--color-highlight);
+  color: var(--color-primary);
+}
+
+html {
+  font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+  font-size: clamp(
+    16px,
+    calc(1rem + (20 - 16) * ((100vw - 320px) / (768 - 320))),
+    20px
+  );
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 0vw;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+p + p {
+  margin-top: var(--spacing-ant);
+}
+
+* + .gatsby-image-wrapper {
+  margin-top: var(--spacing-gerbil);
+  margin-bottom: var(--spacing-gerbil);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: lowercase;
+  font-weight: 800;
+}
