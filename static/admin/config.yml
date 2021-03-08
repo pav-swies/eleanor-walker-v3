@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-site_url: https://elsofia.co.uk/
-display_url: https://elsofia.co.uk/
+site_url: https://eleanor-walker-v3.netlify.app/
+display_url: https://eleanor-walker-v3.netlify.app/
 media_folder: static/img
 public_folder: /img
 slug:

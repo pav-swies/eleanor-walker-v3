@@ -1,6 +1,7 @@
 .container {
   width: 90%;
   max-width: var(--site-max-width);
+  margin-top: var(--spacing-mouse);
   margin-right: auto;
   margin-left: auto;
 }
