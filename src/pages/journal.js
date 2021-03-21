@@ -1,39 +1,22 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import { graphql } from 'gatsby';
 import Container from '../components/container/Container';
 import JournalLink from '../components/journal-link/JournalLink';
 
-const IndexPage = ({ location, data }) => {
+const JournalPage = ({ location, data }) => {
   const entries = data.allMarkdownRemark.edges;
   return (
     <Container location={location}>
+      <h1>Journal</h1>
       <p>
-        My name is Eleanor Walker sit amet consectetur adipisicing elit.
-        Necessitatibus ratione odit earum eos architecto. Iste eum suscipit
-        dolores atque quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+        laudantium.
       </p>
-      <StaticImage
-        src="../images/home.jpg"
-        alt="fabric"
-        placeholder="blurred"
-        layout="constrained"
-        width={900}
-        aspectRatio={16 / 9}
-        formats={['auto', 'webp', 'avif']}
-      />
-      <section>
-        <h2>Latest Journal Entries</h2>
-        <p>
-          Some of my most recent thoughts. You can view all of them on the{' '}
-          <Link to="/journal">journal page</Link>.
-        </p>
-        <ul className="unstyled-list">
-          {entries.map((entry) => (
-            <JournalLink entry={entry.node} key={entry.node.id} />
-          ))}
-        </ul>
-      </section>
+      <ul className="unstyled-list">
+        {entries.map((entry) => (
+          <JournalLink entry={entry.node} key={entry.node.id} />
+        ))}
+      </ul>
     </Container>
   );
 };
@@ -43,7 +26,6 @@ export const query = graphql`
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { type: { eq: "journal" } } }
-      limit: 2
     ) {
       edges {
         node {
@@ -71,4 +53,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexPage;
+export default JournalPage;

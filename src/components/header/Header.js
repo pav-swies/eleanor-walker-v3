@@ -53,18 +53,20 @@ const Header = ({ location }) => {
 
   return (
     <header className={headerStyle}>
-      {headerLogo}
-      <nav>
-        <ul className={style.headerNavList}>
-          {navLinks.map((link, index) => (
-            <li className={style.headerNavItem} key={index}>
-              <Link className={style.headerNavLink} to={link.url}>
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <div className={style.headerInner}>
+        {headerLogo}
+        <nav>
+          <ul className={style.headerNavList}>
+            {navLinks.map((link, index) => (
+              <li className={style.headerNavItem} key={index}>
+                <Link className={style.headerNavLink} to={link.url}>
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

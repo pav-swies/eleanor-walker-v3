@@ -17,6 +17,7 @@
 .journalLinkImage {
   position: relative;
   margin-bottom: var(--spacing-ant);
+  line-height: 0;
 }
 
 @media only screen and (min-width: 600px) {
@@ -41,6 +42,7 @@
 
 .journalLinkContent h2 {
   font-size: var(--font-size-beetle);
+  margin-bottom: 0;
 }
 
 .journalLinkContent a {
