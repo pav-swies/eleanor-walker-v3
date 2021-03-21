@@ -18,7 +18,7 @@ const IndexPage = ({ location, data }) => {
         alt="fabric"
         placeholder="blurred"
         layout="constrained"
-        width={768}
+        width={900}
         aspectRatio={16 / 9}
         formats={['auto', 'webp', 'avif']}
       />

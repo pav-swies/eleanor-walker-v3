@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: var(--spacing-ant);
+  padding-bottom: var(--spacing-gerbil);
+  font-size: var(--font-size-flea);
+}
+
+.footerLogo {
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.footerScrollTop {
+  cursor: pointer;
+  text-transform: lowercase;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.footerScrollTop:focus-visible {
+  outline: auto;
+}

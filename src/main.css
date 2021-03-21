@@ -1,5 +1,5 @@
 :root {
-  --site-max-width: 768px;
+  --site-max-width: 900px;
 
   /* Font Sizes */
   --font-size-flea: 0.8rem;
@@ -50,7 +50,7 @@ html {
   font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
   font-size: clamp(
     16px,
-    calc(1rem + (20 - 16) * ((100vw - 320px) / (768 - 320))),
+    calc(1rem + (20 - 16) * ((100vw - 320px) / (900 - 320))),
     20px
   );
   font-weight: 400;
@@ -63,6 +63,10 @@ html {
 
 a {
   color: var(--color-primary);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p:not([class]) + p:not([class]) {

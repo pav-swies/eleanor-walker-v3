@@ -5,3 +5,13 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.main {
+  margin-top: var(--spacing-gerbil);
+  margin-bottom: var(--spacing-gerbil);
+}
+
+.mainMargin {
+  margin-top: var(--spacing-dog);
+  margin-bottom: var(--spacing-gerbil);
+}
