@@ -9,12 +9,12 @@ const JournalLink = ({ entry }) => {
     <li className={style.journalLink}>
       <article className={style.journalLinkWrapper}>
         <div className={style.journalLinkImage}>
-          <Link to="/" className="faux-link"></Link>
+          <Link to={entry.fields.slug} className="faux-link"></Link>
           <GatsbyImage image={thumbnail} alt="" />
         </div>
         <div className={style.journalLinkContent}>
           <h2>
-            <Link to="/">{entry.frontmatter.title}</Link>
+            <Link to={entry.fields.slug}>{entry.frontmatter.title}</Link>
           </h2>
           <p className={style.journalLinkSubtitle}>
             {entry.frontmatter.subtitle}

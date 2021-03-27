@@ -30,6 +30,9 @@ export const query = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             subtitle
             date(formatString: "Do MMMM YYYY")
