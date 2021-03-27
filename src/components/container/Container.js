@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import * as style from './container.module.css';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
@@ -16,6 +17,9 @@ const Container = ({ children, location }) => {
 
   return (
     <div className={style.container}>
+      <Helmet>
+        <meta name="robots" content="noindex"></meta>
+      </Helmet>
       <Header location={location} />
       <main className={mainStyle}>{children}</main>
       <Footer location={location} />
