@@ -10,18 +10,6 @@ slug:
   clean_accents: true
   sanitize_replacement: '-'
 collections:
-  - name: 'global'
-    label: 'Global'
-    folder: 'content/global'
-    create: false
-    fields:
-      - { label: 'field', name: 'field', widget: 'text' }
-  - name: 'home'
-    label: 'Home Page'
-    folder: 'content/home'
-    create: false
-    fields:
-      - { label: 'Introduction', name: 'introduction', widget: 'text' }
   - name: 'journal'
     label: 'Journal'
     folder: 'content/journal'

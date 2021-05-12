@@ -19,9 +19,7 @@ const Footer = ({ location }) => {
 
   const rootPath = location.pathname === `${__PATH_PREFIX__}/`;
 
-  const footerLogoText = `${
-    data.site.siteMetadata.title
-  } ©${new Date().getFullYear()}`;
+  const footerLogoText = `${data.site.siteMetadata.title} ©${new Date().getFullYear()}`;
 
   let footerLogo;
 
