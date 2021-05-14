@@ -8,12 +8,8 @@ const IndexPage = ({ location, data }) => {
   const entries = data.allMarkdownRemark.edges;
   return (
     <Container location={location}>
-      <p>
-        My name is Eleanor Walker sit amet consectetur adipisicing elit.
-        Necessitatibus ratione odit earum eos architecto. Iste eum suscipit
-        dolores atque quidem!
-      </p>
       <StaticImage
+        className="hero-image"
         src="../images/home.jpg"
         alt="fabric"
         placeholder="blurred"

@@ -8,11 +8,11 @@ const WorkPage = ({ location, data }) => {
 
   return (
     <Container location={location}>
-      <div >
+      <div>
         <h1>Work</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aperiam.</p>
       </div>
-      <ul className="grid-list">
+      <ul className="grid-list unstyled-list">
         {entries.map((entry) => (
           <WorkLink entry={entry.node} key={entry.node.id} />
         ))}
@@ -36,7 +36,7 @@ export const query = graphql`
             slug
           }
           frontmatter {
-            thumbnail {
+            featuredImage {
               childImageSharp {
                 gatsbyImageData(
                   width: 600

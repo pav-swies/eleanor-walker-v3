@@ -2,6 +2,10 @@
   margin-top: var(--spacing-gerbil);
 }
 
+.journalLinkImage:hover ~ .journalLinkContent h2 {
+  text-decoration: underline;
+}
+
 .journalLinkWrapper {
   display: flex;
   flex-direction: column;

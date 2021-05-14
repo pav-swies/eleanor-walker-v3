@@ -1,0 +1,35 @@
+.workLinkWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workLinkImage:hover ~ .workLinkContent h2 {
+  text-decoration: underline;
+}
+
+.workLinkImage {
+  position: relative;
+  margin-bottom: var(--spacing-ant);
+  line-height: 0;
+}
+
+.workLinkImage > div {
+  margin: 0;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.workLinkContent h2 {
+  font-size: var(--font-size-ant);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.workLinkContent:hover h2 {
+  text-decoration: underline;
+}
+
+.workLinkContent a {
+  text-decoration: none;
+}
