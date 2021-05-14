@@ -85,7 +85,13 @@ p:not([class]) + p:not([class]) {
 }
 
 h1 {
-  font-size: var(--font-size-gerbil);
+  font-size: var(--font-size-mouse);
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: var(--font-size-gerbil);
+  }
 }
 
 h1,
@@ -150,21 +156,51 @@ img {
 .about-header {
   display: flex;
   flex-direction: column;
+  margin-bottom: var(--spacing-mouse);
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
   .about-header {
     flex-direction: row;
   }
 }
 
-.about-header > * {
-  flex-basis: 50%;
+.about-header-image-wrapper {
+  margin-bottom: var(--spacing-ant);
+  width: 100%;
 }
 
-.about-header-image {
-  /* margin-right: var(--spacing-mouse); */
-  max-width: 400px;
+@media only screen and (min-width: 600px) {
+  .about-header-image-wrapper {
+    margin-right: var(--spacing-mouse);
+    margin-bottom: 0;
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-header-image > div {
+    margin: 0;
+    height: 0;
+    padding-bottom: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .about-header-content,
+  .about-header-image-wrapper {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .about-header-content {
+    flex-basis: 60%;
+  }
+
+  .about-header-image-wrapper {
+    flex-basis: 40%;
+  }
 }
 
 .journal-subtitle {

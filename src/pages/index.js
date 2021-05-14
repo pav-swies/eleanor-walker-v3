@@ -17,6 +17,7 @@ const IndexPage = ({ location, data }) => {
         width={900}
         aspectRatio={16 / 9}
         formats={['auto', 'webp', 'avif']}
+        quality="100"
       />
       <section>
         <h2>Latest Journal Entries</h2>

@@ -52,6 +52,12 @@
   white-space: nowrap;
 }
 
+@media screen and (min-width: 600px) {
+  .headerLargeTitle {
+    font-size: var(--font-size-gerbil);
+  }
+}
+
 .headerNavList {
   display: flex;
   align-items: center;

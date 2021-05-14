@@ -7,22 +7,26 @@ const JournalPage = ({ location }) => {
     <Container location={location}>
       <h1>About me</h1>
       <div className="about-header">
-        <StaticImage
-          className="about-header-image"
-          src="../images/home.jpg"
-          alt="Eleanor Sofia Walker"
-          placeholder="blurred"
-          layout="constrained"
-          width={900}
-          aspectRatio={3 / 4}
-          formats={['auto', 'webp', 'avif']}
-        />
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, corporis?</p>
+        <div className="about-header-image-wrapper">
+          <StaticImage
+            className="about-header-image"
+            src="../images/about-image.jpg"
+            alt="Eleanor Sofia Walker"
+            placeholder="blurred"
+            layout="constrained"
+            width={600}
+            aspectRatio={3 / 4}
+            formats={['auto', 'webp', 'avif']}
+            quality="100"
+          />
+        </div>
+        <div className="about-header-content">
+          <p>Eleanor Walker Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, corporis?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, impedit voluptatum. Error aliquam corrupti provident dolores tempora commodi aperiam. Atque sed quaerat vel maiores reiciendis quas nihil consequuntur voluptatibus nulla!</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, impedit voluptatum. Error aliquam corrupti provident dolores tempora commodi aperiam. Atque sed quaerat vel maiores reiciendis quas nihil consequuntur voluptatibus nulla!</p>
         </div>
       </div>
+      <h2>A heading</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, impedit voluptatum. Error aliquam corrupti provident dolores tempora commodi aperiam. Atque sed quaerat vel maiores reiciendis quas nihil consequuntur voluptatibus nulla!</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, impedit voluptatum. Error aliquam corrupti provident dolores tempora commodi aperiam. Atque sed quaerat vel maiores reiciendis quas nihil consequuntur voluptatibus nulla!</p>
     </Container>
