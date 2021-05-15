@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import * as style from './header.module.css';
 
@@ -33,39 +33,39 @@ const Header = ({ location }) => {
     },
   ];
 
-  const { title, shortTitle } = data.site.siteMetadata;
+  const { title } = data.site.siteMetadata;
   const rootPath = location.pathname === `${__PATH_PREFIX__}/`;
 
-  let headerStyle;
   let headerLogo;
 
   if (rootPath) {
-    headerStyle = style.headerLarge;
-    headerLogo = <h1 className={style.headerLargeTitle}>{title}</h1>;
+    headerLogo = <h1 className={style.headerTitle}>{title}</h1>;
   } else {
-    headerStyle = style.headerCompact;
     headerLogo = (
       <Link className={style.headerTitle} to="/">
-        {shortTitle}
+        {title}
       </Link>
     );
   }
 
+  const [nav, setNav] = useState(0);
+
   return (
-    <header className={headerStyle}>
+    <header className={`${style.header} ${nav === 1 ? style.headerOpen : ''}`}>
       <div className={style.headerInner}>
         {headerLogo}
-        <nav>
+        <nav className={`${style.headerNav} ${nav === 1 ? style.headerNavOpen : ''}`}>
           <ul className={style.headerNavList}>
             {navLinks.map((link, index) => (
               <li className={style.headerNavItem} key={index}>
-                <Link className={style.headerNavLink} to={link.url}>
+                <Link className={style.headerNavLink} to={link.url} onClick={() => setNav(0)}>
                   {link.name}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
+        <button className={style.headerButton} onClick={() => setNav(nav === 0 ? 1 : 0)}>Menu</button>
       </div>
     </header>
   );
