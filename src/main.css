@@ -88,9 +88,10 @@ h1 {
   font-size: var(--font-size-mouse);
 }
 
-@media screen and (min-width: 600px) {
-  h1 {
-    font-size: var(--font-size-gerbil);
+@media screen and (max-width: 600px) {
+  h1,
+  h2 {
+    font-size: var(--font-size-beetle);
   }
 }
 
@@ -103,13 +104,6 @@ h6 {
   margin-bottom: var(--spacing-ant);
   text-transform: lowercase;
   font-weight: 800;
-}
-
-@media screen and (max-width: 600px) {
-  h1,
-  h2 {
-    font-size: var(--font-size-beetle);
-  }
 }
 
 p:not([class]) + h1,

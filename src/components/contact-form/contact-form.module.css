@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRow + .formRow {
+  margin-top: var(--spacing-mouse);
+}
+
+.formRow label {
+  text-transform: lowercase;
+}

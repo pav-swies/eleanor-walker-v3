@@ -16,16 +16,20 @@ const Header = ({ location }) => {
 
   const navLinks = [
     {
-      name: 'About',
-      url: '/about',
+      name: 'Home',
+      url: '/',
+    },
+    {
+      name: 'Work',
+      url: '/work',
     },
     {
       name: 'Journal',
       url: '/journal',
     },
     {
-      name: 'Work',
-      url: '/work',
+      name: 'About',
+      url: '/about',
     },
     {
       name: 'Contact',
