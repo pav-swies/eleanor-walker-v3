@@ -3,7 +3,8 @@ import * as style from './contact-form.module.css';
 
 const ContactForm = () => {
   return (
-    <form className={style.form} name="contact" action="/thank-you" method="post" netlify>
+    <form className={style.form} method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+      <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
       <div className={style.formRow}>
         <label htmlFor="name">Your Name:</label>
