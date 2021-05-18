@@ -39,7 +39,13 @@ const Header = ({ location }) => {
   let headerLogo;
 
   if (rootPath) {
-    headerLogo = <h1 className={style.headerTitle}>{title}</h1>;
+    headerLogo = (
+      <h1 className={style.headerTitle}>
+        <Link to="/">
+          {title}
+        </Link>
+      </h1>
+    );
   } else {
     headerLogo = (
       <Link className={style.headerTitle} to="/">
@@ -54,18 +60,31 @@ const Header = ({ location }) => {
     <header className={`${style.header} ${nav === 1 ? style.headerOpen : ''}`}>
       <div className={style.headerInner}>
         {headerLogo}
-        <nav className={`${style.headerNav} ${nav === 1 ? style.headerNavOpen : ''}`}>
+        <nav
+          className={`${style.headerNav} ${
+            nav === 1 ? style.headerNavOpen : ''
+          }`}
+        >
           <ul className={style.headerNavList}>
             {navLinks.map((link, index) => (
               <li className={style.headerNavItem} key={index}>
-                <Link className={style.headerNavLink} to={link.url} onClick={() => setNav(0)}>
+                <Link
+                  className={style.headerNavLink}
+                  to={link.url}
+                  onClick={() => setNav(0)}
+                >
                   {link.name}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <button className={style.headerButton} onClick={() => setNav(nav === 0 ? 1 : 0)}>Menu</button>
+        <button
+          className={style.headerButton}
+          onClick={() => setNav(nav === 0 ? 1 : 0)}
+        >
+          Menu
+        </button>
       </div>
     </header>
   );

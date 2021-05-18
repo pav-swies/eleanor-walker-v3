@@ -52,8 +52,8 @@
 .headerTitle {
   font-size: var(--font-size-beetle);
   font-weight: 800;
-  text-decoration: none;
   text-transform: lowercase;
+  text-decoration: none;
   margin-bottom: 0;
   transition: color 0.2s ease;
   position: relative;
@@ -66,8 +66,18 @@
   }
 }
 
-a.headerTitle:hover {
+.headerTitle a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.headerTitle:hover,
+.headerTitle a:hover {
   color: var(--color-highlight);
+  text-decoration: none;
+}
+
+.headerTitle a {
   text-decoration: none;
 }
 
