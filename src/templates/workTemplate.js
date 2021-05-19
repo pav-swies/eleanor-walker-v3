@@ -10,7 +10,7 @@ const JournalTemplate = ({ location, data }) => {
   return (
     <Container location={location}>
       <article>
-        <Link to="/work">Back to work</Link>
+        <Link className="return-link" to="/work">Back to work</Link>
         {/* <GatsbyImage image={banner} alt="" />
         <h1>{journal.title}</h1> */}
         <div dangerouslySetInnerHTML={{ __html: html }} />

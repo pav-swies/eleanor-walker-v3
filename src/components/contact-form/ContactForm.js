@@ -8,7 +8,7 @@ const ContactForm = () => {
       <input type="hidden" name="form-name" value="contact" />
       <div className={style.formRow}>
         <label htmlFor="name">Your Name:</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required />
       </div>
       <div className={style.formRow}>
         <label htmlFor="email">Your Email:</label>
@@ -16,9 +16,9 @@ const ContactForm = () => {
       </div>
       <div className={style.formRow}>
         <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="message" rows="6" required></textarea>
       </div>
-      <input class="cta form__button" type="submit" value="Send message" />
+      <input className={style.formSubmit} type="submit" value="Send message" />
     </form>
   );
 };

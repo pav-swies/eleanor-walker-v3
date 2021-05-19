@@ -22,6 +22,7 @@
   --color-primary: #000000;
   --color-secondary: #ffffff;
   --color-light: #757575;
+  --color-ghost: #d8d8d8;
   --color-highlight: #ec6f59;
 }
 
@@ -118,11 +119,6 @@ p:not([class]) + h6 {
 img {
   display: block;
 }
-
-.hero-image {
-  margin-bottom: var(--spacing-gerbil);
-}
-
 .unstyled-list {
   list-style: none;
   padding: 0;
@@ -153,6 +149,15 @@ img {
   cursor: pointer;
   z-index: 2;
 }
+
+.return-link {
+  text-transform: lowercase;
+}
+
+.hero-image {
+  margin-bottom: var(--spacing-gerbil);
+}
+
 
 .about-header {
   display: flex;

@@ -10,7 +10,7 @@ const JournalTemplate = ({ location, data }) => {
   return (
     <Container location={location}>
       <article>
-        <Link to="/journal">Back to journal</Link>
+        <Link className="return-link" to="/journal">Back to journal</Link>
         <GatsbyImage image={banner} alt="" />
         <h1>{journal.title}</h1>
         <p className="journal-subtitle">{journal.subtitle}</p>
