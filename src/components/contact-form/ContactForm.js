@@ -3,7 +3,14 @@ import * as style from './contact-form.module.css';
 
 const ContactForm = () => {
   return (
-    <form className={style.form} method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/thank-you">
+    <form
+      className={style.form}
+      method="post"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      name="contact"
+      action="/thank-you"
+    >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
       <div className={style.formRow}>
@@ -12,7 +19,7 @@ const ContactForm = () => {
       </div>
       <div className={style.formRow}>
         <label htmlFor="email">Your Email:</label>
-        <input type="text" id="email" name="email" />
+        <input type="text" id="email" name="email" required />
       </div>
       <div className={style.formRow}>
         <label htmlFor="message">Message:</label>

@@ -1,18 +1,16 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-// import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Container from '../components/container/Container';
 
-const JournalTemplate = ({ location, data }) => {
-  // const journal = data.markdownRemark.frontmatter;
+const WorkTemplate = ({ location, data }) => {
+  const work = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
-  // const banner = getImage(journal.thumbnail);
+
   return (
     <Container location={location}>
-      <article>
+      <article className="work-wrapper">
         <Link className="return-link" to="/work">Back to work</Link>
-        {/* <GatsbyImage image={banner} alt="" />
-        <h1>{journal.title}</h1> */}
+        <h1>{work.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </article>
     </Container>
@@ -44,4 +42,4 @@ export const query = graphql`
   }
 `;
 
-export default JournalTemplate;
+export default WorkTemplate;

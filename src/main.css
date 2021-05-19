@@ -99,9 +99,13 @@ textarea {
   transition: outline 0.2s ease;
 }
 
+button:focus-visible {
+  outline: none;
+}
+
 a:focus-visible,
 input:focus-within,
-button:focus-within,
+button:focus-visible,
 textarea:focus-within {
   outline: 2px solid var(--color-highlight);
 }
@@ -246,4 +250,9 @@ img {
   .journal-subtitle + p {
     margin-bottom: var(--spacing-gerbil);
   }
+}
+
+.work-wrapper h1 {
+  margin-top: var(--spacing-mouse);
+  margin-bottom: var(--spacing-mouse);
 }
