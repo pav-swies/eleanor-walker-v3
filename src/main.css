@@ -85,6 +85,27 @@ p:not([class]) + p:not([class]) {
   }
 }
 
+a,
+input,
+button,
+textarea {
+  outline-offset: 4px;
+}
+
+input,
+textarea {
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  transition: outline 0.2s ease;
+}
+
+a:focus-within,
+input:focus-within,
+button:focus-within,
+textarea:focus-within {
+  outline: 2px solid var(--color-highlight);
+}
+
 h1 {
   font-size: var(--font-size-mouse);
 }

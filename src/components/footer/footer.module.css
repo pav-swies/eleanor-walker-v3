@@ -20,7 +20,3 @@
   border: none;
   outline: none;
 }
-
-.footerScrollTop:focus-visible {
-  outline: auto;
-}

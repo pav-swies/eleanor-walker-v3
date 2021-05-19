@@ -40,4 +40,5 @@
   margin-top: var(--spacing-mouse);
   padding: 0;
   cursor: pointer;
+  outline-offset: 4px;
 }
