@@ -99,7 +99,7 @@ textarea {
   transition: outline 0.2s ease;
 }
 
-a:focus-within,
+a:focus-visible,
 input:focus-within,
 button:focus-within,
 textarea:focus-within {
