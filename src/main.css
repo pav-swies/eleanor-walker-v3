@@ -183,7 +183,6 @@ img {
   margin-bottom: var(--spacing-gerbil);
 }
 
-
 .about-header {
   display: flex;
   flex-direction: column;
@@ -253,6 +252,10 @@ img {
 }
 
 .work-wrapper h1 {
-  margin-top: var(--spacing-mouse);
+  margin-top: var(--spacing-ant);
+  margin-bottom: var(--spacing-ant);
+}
+
+.work-content-wrapper p {
   margin-bottom: var(--spacing-mouse);
 }

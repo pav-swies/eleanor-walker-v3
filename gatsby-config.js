@@ -47,7 +47,23 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-plugin-netlify-cms-paths`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+              linkImagesToOriginal: false,
+              withWebp: true,
+              quality: 90,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -58,7 +74,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.svg`,
       },
     },
     `gatsby-plugin-gatsby-cloud`,

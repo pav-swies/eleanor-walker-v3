@@ -9,9 +9,14 @@ const WorkTemplate = ({ location, data }) => {
   return (
     <Container location={location}>
       <article className="work-wrapper">
-        <Link className="return-link" to="/work">Back to work</Link>
+        <Link className="return-link" to="/work">
+          Back to work
+        </Link>
         <h1>{work.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div
+          className="work-content-wrapper"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </article>
     </Container>
   );

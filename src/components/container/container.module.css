@@ -1,13 +1,12 @@
 .container {
   width: 90%;
   max-width: var(--site-max-width);
-  margin-top: var(--spacing-dog);
+  margin-top: var(--spacing-cat);
   margin-right: auto;
   margin-bottom: var(--spacing-ant);
   margin-left: auto;
 }
 
 .main {
-  margin-top: var(--spacing-mouse);
   margin-bottom: var(--spacing-gerbil);
 }
