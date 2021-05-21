@@ -9,13 +9,18 @@ const JournalTemplate = ({ location, data }) => {
   const banner = getImage(journal.thumbnail);
   return (
     <Container location={location}>
-      <article>
-        <Link className="return-link" to="/journal">Back to journal</Link>
+      <article className="journal-wrapper">
+        <Link className="return-link" to="/journal">
+          Back to journal
+        </Link>
         <GatsbyImage image={banner} alt="" />
         <h1>{journal.title}</h1>
         <p className="journal-subtitle">{journal.subtitle}</p>
         <p>{journal.date}</p>
-        <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: html }} />
+        <div
+          className="content-wrapper"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </article>
     </Container>
   );
@@ -34,7 +39,7 @@ export const query = graphql`
         thumbnail {
           childImageSharp {
             gatsbyImageData(
-              width: 900
+              width: 1000
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
               aspectRatio: 1.7

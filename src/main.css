@@ -1,5 +1,5 @@
 :root {
-  --site-max-width: 900px;
+  --site-max-width: 1000px;
 
   /* Font Sizes */
   --font-size-flea: 0.8rem;
@@ -19,7 +19,7 @@
   --spacing-whale: 8rem;
 
   /* Colours */
-  --color-primary: #000000;
+  --color-primary: #2b2b2b;
   --color-secondary: #ffffff;
   --color-light: #757575;
   --color-ghost: #d8d8d8;
@@ -50,12 +50,13 @@
 html {
   font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
   font-size: clamp(
-    16px,
-    calc(1rem + (20 - 16) * ((100vw - 320px) / (900 - 320))),
-    20px
+    18px,
+    calc(1rem + (22 - 18) * ((100vw - 320px) / (900 - 320))),
+    22px
   );
   font-weight: 400;
   line-height: 1.5;
+  color: var(--color-primary);
   min-height: 0vw;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -144,6 +145,11 @@ p:not([class]) + h6 {
 img {
   display: block;
 }
+
+p {
+  font-weight: 300;
+}
+
 .unstyled-list {
   list-style: none;
   padding: 0;
@@ -245,21 +251,18 @@ img {
 }
 
 .journal-subtitle {
-  font-size: var(--font-size-flea);
   font-style: italic;
   color: var(--color-light);
   margin-top: var(--spacing-flea);
-  margin-bottom: var(--spacing-ant);
+  margin-bottom: var(--spacing-flea);
 }
 
 .journal-subtitle + p {
-  margin-bottom: var(--spacing-ant);
+  margin-bottom: var(--spacing-mouse);
 }
 
-@media only screen and (min-width: 600px) {
-  .journal-subtitle + p {
-    margin-bottom: var(--spacing-gerbil);
-  }
+.journal-wrapper h1 {
+  margin-bottom: 0;
 }
 
 .work-wrapper h1 {

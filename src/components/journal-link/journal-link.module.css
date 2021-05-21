@@ -58,7 +58,6 @@
 }
 
 .journalLinkSubtitle {
-  font-size: var(--font-size-flea);
   font-style: italic;
   color: var(--color-light);
   margin-top: var(--spacing-flea);

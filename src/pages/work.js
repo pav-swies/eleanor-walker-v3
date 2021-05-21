@@ -8,9 +8,7 @@ const WorkPage = ({ location, data }) => {
 
   return (
     <Container location={location}>
-      <div>
-        <h1>Work</h1>
-      </div>
+      <h1>Work</h1>
       <ul className="grid-list unstyled-list">
         {entries.map((entry) => (
           <WorkLink entry={entry.node} key={entry.node.id} />
