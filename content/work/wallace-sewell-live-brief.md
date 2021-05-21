@@ -1,5 +1,5 @@
 ---
-title: Cosy Colour Blankets
+title: Cosy In Colour
 date: 2021-05-20T09:33:42.890Z
 featuredImage: /img/img_2080.jpg
 type: work
