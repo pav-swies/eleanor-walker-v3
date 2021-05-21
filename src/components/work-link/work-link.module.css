@@ -24,6 +24,7 @@
   font-size: var(--font-size-ant);
   font-weight: 600;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .workLinkContent:hover h2 {

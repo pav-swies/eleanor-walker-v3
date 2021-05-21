@@ -8,10 +8,7 @@ const JournalPage = ({ location, data }) => {
   return (
     <Container location={location}>
       <h1>Journal</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-        laudantium.
-      </p>
+      <p>A place for my thoughts, ideas, collaborations & more.</p>
       <ul className="unstyled-list">
         {entries.map((entry) => (
           <JournalLink entry={entry.node} key={entry.node.id} />

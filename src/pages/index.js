@@ -19,6 +19,25 @@ const IndexPage = ({ location, data }) => {
         formats={['auto', 'webp', 'avif']}
         quality="100"
       />
+      <div className="hero-intro">
+        <p>
+          I’m Eleanor, a curious handweaver & textile artist. I create handwoven
+          pieces for the home, always made with natural materials and designed
+          to feel good.
+        </p>
+        <p>
+          Contact me <Link to="/contact">here</Link> about commissions, or find
+          me on{' '}
+          <a
+            href="https://www.instagram.com/eleanorsofia_/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
+          </a>
+          .
+        </p>
+      </div>
       <section>
         <h2>Latest Journal Entries</h2>
         <p>

@@ -7,8 +7,18 @@ const ContactPage = ({ location, data }) => {
     <Container location={location}>
       <h1>Contact</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-        laudantium.
+        You can find me on instagram{' '}
+        <a
+          href="https://www.instagram.com/eleanorsofia_/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          @eleanorsofia_
+        </a>
+      </p>
+      <p>
+        Or if you'd like to get in touch about anything, please use the form
+        below leaving your email address if you’d like me to write back.
       </p>
       <ContactForm />
     </Container>

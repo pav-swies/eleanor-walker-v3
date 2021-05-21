@@ -21,14 +21,43 @@ const JournalPage = ({ location }) => {
           />
         </div>
         <div className="about-header-content">
-          <p>Eleanor Walker Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, corporis?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, impedit voluptatum. Error aliquam corrupti provident dolores tempora commodi aperiam. Atque sed quaerat vel maiores reiciendis quas nihil consequuntur voluptatibus nulla!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, impedit voluptatum. Error aliquam corrupti provident dolores tempora commodi aperiam. Atque sed quaerat vel maiores reiciendis quas nihil consequuntur voluptatibus nulla!</p>
+          <p>Hello, I’m Eleanor and I am a handweaver.</p>
+          <p>
+            I spent 3 years at university learning to weave and I now own a
+            small table loom and a large floor loom where I create my own woven
+            textiles.
+          </p>
+          <p>
+            For me, weaving is a never-ending journey where craft, storytelling
+            and the senses come together.
+          </p>
+          <p>
+            I like to explore each of these through what I create. By making
+            hand woven pieces for the home, I hope to bring comfort and beauty
+            to everyday life.
+          </p>
+          <p>
+            As a person I am curious and present, a passionate learner finding
+            joy in the small things.
+          </p>
         </div>
       </div>
-      <h2>A heading</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, impedit voluptatum. Error aliquam corrupti provident dolores tempora commodi aperiam. Atque sed quaerat vel maiores reiciendis quas nihil consequuntur voluptatibus nulla!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, impedit voluptatum. Error aliquam corrupti provident dolores tempora commodi aperiam. Atque sed quaerat vel maiores reiciendis quas nihil consequuntur voluptatibus nulla!</p>
+      <h2>About my work</h2>
+      <p>
+        Everything I weave is made using natural fibres and materials, like soft
+        cotton, fluffy merino wool, nubbly silk noil and more. This is important
+        to me because of their power to reconnect us to the natural world, and
+        because too much around us today is synthetic. I believe this connection
+        we have with nature can improve our wellbeing and I like to incorporate
+        this philosophy into my textiles.
+      </p>
+      <p>
+        Nature is what inspires me the most, with her colours and diversity,
+        intricacies and simplicity, eternal growth, and perfect imperfections.
+        But I also find ideas and inspiration in people, experiences, and
+        feelings; sometimes a colour or pattern choice can just be an intuitive
+        decision.
+      </p>
     </Container>
   );
 };

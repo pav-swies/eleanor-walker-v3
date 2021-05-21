@@ -10,7 +10,6 @@ const WorkPage = ({ location, data }) => {
     <Container location={location}>
       <div>
         <h1>Work</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aperiam.</p>
       </div>
       <ul className="grid-list unstyled-list">
         {entries.map((entry) => (
@@ -18,8 +17,8 @@ const WorkPage = ({ location, data }) => {
         ))}
       </ul>
     </Container>
-  )
-}
+  );
+};
 
 export default WorkPage;
 

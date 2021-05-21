@@ -41,4 +41,5 @@
   padding: 0;
   cursor: pointer;
   outline-offset: 4px;
+  text-transform: lowercase;
 }
