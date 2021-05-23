@@ -51,7 +51,7 @@ html {
   font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
   font-size: clamp(
     18px,
-    calc(1rem + (22 - 18) * ((100vw - 320px) / (900 - 320))),
+    calc(1rem + (22 - 18) * ((100vw - 320px) / (1000 - 320))),
     22px
   );
   font-weight: 400;
@@ -186,7 +186,7 @@ p {
 }
 
 .hero-image {
-  margin-bottom: var(--spacing-ant);
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -196,8 +196,10 @@ p {
   }
 }
 
-.hero-intro {
-  margin-bottom: var(--spacing-gerbil);
+.hero-image-caption {
+  font-style: italic;
+  color: var(--color-light);
+  margin-bottom: var(--spacing-mouse);
 }
 
 .about-header {

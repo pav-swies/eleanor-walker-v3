@@ -8,17 +8,6 @@ const IndexPage = ({ location, data }) => {
   const entries = data.allMarkdownRemark.edges;
   return (
     <Container location={location}>
-      <StaticImage
-        className="hero-image"
-        src="../images/home.jpg"
-        alt="fabric"
-        placeholder="blurred"
-        layout="constrained"
-        width={1000}
-        aspectRatio={16 / 9}
-        formats={['auto', 'webp', 'avif']}
-        quality="100"
-      />
       <div className="hero-intro">
         <p>
           I’m Eleanor, a curious handweaver & textile artist. I create handwoven
@@ -38,6 +27,18 @@ const IndexPage = ({ location, data }) => {
           .
         </p>
       </div>
+      <StaticImage
+        className="hero-image"
+        src="../images/home.jpg"
+        alt="fabric"
+        placeholder="blurred"
+        layout="constrained"
+        width={1000}
+        aspectRatio={16 / 9}
+        formats={['auto', 'webp', 'avif']}
+        quality="100"
+      />
+      <p className="hero-image-caption">Mindful Spring Blanket</p>
       <section>
         <h2>Latest Journal Entries</h2>
         <p>
