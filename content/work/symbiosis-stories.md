@@ -10,4 +10,4 @@ A handwoven sensory book, telling the stories of five different symbiotic relati
 
 ![Symbiosis Stories](/img/img_2213-min.jpg "Symbiosis Stories")
 
-![](/img/group-74.png)
+![Symbiosis Stories](/img/group-74.png "Symbiosis Stories")
