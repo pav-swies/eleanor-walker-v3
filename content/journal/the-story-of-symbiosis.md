@@ -2,7 +2,7 @@
 title: The Story of Symbiosis
 subtitle: How I made my woven book, telling five symbiosis stories
 date: 2021-05-23T20:11:54.090Z
-thumbnail: /img/img_2158.jpg
+thumbnail: /img/group-74.png
 type: journal
 ---
 Did you know that there are small hermit crabs, that take sea anemones with them on their shells, everywhere they go?
