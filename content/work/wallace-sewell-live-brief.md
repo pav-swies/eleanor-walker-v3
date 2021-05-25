@@ -6,10 +6,10 @@ type: work
 ---
 A collection of blanket samples designed to be cosy in texture and in colour. Inspired by Mark Rothko's warmer Colour Field Paintings. Created with lambs wool.
 
-![Wallace Sewell Live Brief](/img/img_2080.jpg "Wallace Sewell Live Brief")
+![Cosy in Colour](/img/img_2080.jpg "Cosy in Colour")
 
-![Wallace Sewell Live Brief](/img/1.jpg "Wallace Sewell Live Brief")
+![Cosy in Colour](/img/1.jpg "Cosy in Colour")
 
-![Wallace Sewell Live Brief](/img/img_2083.jpg "Wallace Sewell Live Brief")
+![Cosy in Colour](/img/img_2083.jpg "Cosy in Colour")
 
-![Wallace Sewell Live Brief](/img/img_2074.jpg "Wallace Sewell Live Brief")
+![Cosy in Colour](/img/img_2074.jpg "Cosy in Colour")
