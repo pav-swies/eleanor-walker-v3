@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Container from '../components/container/Container';
+import Seo from '../components/seo/Seo';
 
 const JournalTemplate = ({ location, data }) => {
   const journal = data.markdownRemark.frontmatter;
@@ -9,6 +10,7 @@ const JournalTemplate = ({ location, data }) => {
   const banner = getImage(journal.thumbnail);
   return (
     <Container location={location}>
+      <Seo title={journal.title} description={journal.subtitle} image={banner} article={true} />
       <article className="journal-wrapper">
         <Link className="return-link" to="/journal">
           Back to journal

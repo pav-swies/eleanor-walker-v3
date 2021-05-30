@@ -2,8 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `Eleanor Sofia Walker`,
     shortTitle: `esw`,
-    description: ``,
-    author: ``,
+    titleTemplate: '%s | Eleanor Sofia Walker',
+    description:
+      'I’m Eleanor, a curious handweaver & textile artist. I create handwoven pieces for the home, always made with natural materials and designed to feel good.',
+    url: 'https://www.elsofia.co.uk',
+    siteUrl: 'https://www.elsofia.co.uk',
+    image: '/img/home.jpg',
+    instagramUsername: '@eleanorsofia_',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -68,8 +73,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Eleanor Sofia Walker`,
+        short_name: `El Sofia`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
@@ -77,6 +82,8 @@ module.exports = {
         icon: `src/images/favicon.svg`,
       },
     },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

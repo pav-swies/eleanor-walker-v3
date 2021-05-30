@@ -1,5 +1,6 @@
 :root {
   --site-max-width: 1000px;
+  --heading-letter-spacing: -0.02rem;
 
   /* Font Sizes */
   --font-size-flea: 0.8rem;
@@ -131,6 +132,7 @@ h6 {
   margin-bottom: var(--spacing-ant);
   text-transform: lowercase;
   font-weight: 800;
+  letter-spacing: var(--heading-letter-spacing);
 }
 
 p:not([class]) + h1,

@@ -3,11 +3,13 @@ import { Link, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import Container from '../components/container/Container';
 import JournalLink from '../components/journal-link/JournalLink';
+import Seo from '../components/seo/Seo';
 
 const IndexPage = ({ location, data }) => {
   const entries = data.allMarkdownRemark.edges;
   return (
     <Container location={location}>
+      <Seo title="Home" />
       <div className="hero-intro">
         <p>
           I’m Eleanor, a curious handweaver & textile artist. I create handwoven

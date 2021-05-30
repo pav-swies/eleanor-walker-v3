@@ -1,10 +1,12 @@
 import React from 'react';
 import Container from '../components/container/Container';
 import ContactForm from '../components/contact-form/ContactForm';
+import Seo from '../components/seo/Seo';
 
 const ContactPage = ({ location, data }) => {
   return (
     <Container location={location}>
+      <Seo title="Contact" />
       <h1>Contact</h1>
       <p>
         You can find me on instagram{' '}

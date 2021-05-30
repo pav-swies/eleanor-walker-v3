@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Container from '../components/container/Container';
+import Seo from '../components/seo/Seo';
 
 const WorkTemplate = ({ location, data }) => {
   const work = data.markdownRemark.frontmatter;
@@ -8,6 +9,7 @@ const WorkTemplate = ({ location, data }) => {
 
   return (
     <Container location={location}>
+      <Seo title={work.title} article={true} />
       <article className="work-wrapper">
         <Link className="return-link" to="/work">
           Back to work

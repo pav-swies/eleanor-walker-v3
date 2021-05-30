@@ -52,6 +52,7 @@
 .headerTitle {
   font-size: var(--font-size-beetle);
   font-weight: 800;
+  letter-spacing: var(--heading-letter-spacing);
   text-transform: lowercase;
   text-decoration: none;
   margin-bottom: 0;

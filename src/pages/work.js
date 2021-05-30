@@ -2,12 +2,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Container from '../components/container/Container';
 import WorkLink from '../components/work-link/WorkLink';
+import Seo from '../components/seo/Seo';
 
 const WorkPage = ({ location, data }) => {
   const entries = data.allMarkdownRemark.edges;
 
   return (
     <Container location={location}>
+      <Seo title="Work" />
       <h1>Work</h1>
       <ul className="grid-list unstyled-list">
         {entries.map((entry) => (

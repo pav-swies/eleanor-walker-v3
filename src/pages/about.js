@@ -1,10 +1,12 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Container from '../components/container/Container';
+import Seo from '../components/seo/Seo';
 
 const JournalPage = ({ location }) => {
   return (
     <Container location={location}>
+      <Seo title="About" />
       <h1>About me</h1>
       <div className="about-header">
         <div className="about-header-image-wrapper">

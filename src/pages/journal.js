@@ -2,11 +2,13 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Container from '../components/container/Container';
 import JournalLink from '../components/journal-link/JournalLink';
+import Seo from '../components/seo/Seo';
 
 const JournalPage = ({ location, data }) => {
   const entries = data.allMarkdownRemark.edges;
   return (
     <Container location={location}>
+      <Seo title="Journal" />
       <h1>Journal</h1>
       <p>A place for my thoughts, ideas, collaborations & more.</p>
       <ul className="unstyled-list">
