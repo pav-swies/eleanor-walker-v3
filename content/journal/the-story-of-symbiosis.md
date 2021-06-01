@@ -7,7 +7,7 @@ type: journal
 ---
 Did you know that there are small hermit crabs, that take sea anemones with them on their shells, everywhere they go? 
 
-The crabs do this to protect themselves from predators, but the otherwise immobile anemone gets to travel around to new feeding grounds, eating what the crab drops. This is mutualistic symbiosis, when two living organisms benefit from each other by both giving and taking. 
+The crabs do this to protect themselves from predators, but the otherwise immobile anemone gets to travel around to new feeding grounds, eating what the crab drops. This is mutualistic symbiosis, when two living organisms benefit from each other by both giving and taking. See this relationship in real life [here.](https://www.youtube.com/watch?v=dYFALyP2e7U)
 
 To me, this is a small and lovely window into that utopian ‘perfect world’ of circular economy and equality. It’s inspiring to see and to learn about, and as I find myself with the skills to create (currently in the form of woven textiles) I wanted to combine this with my love and passion for this weird and wonderful planet.
 
