@@ -1,6 +1,6 @@
 ---
 title: Mindful Spring Blanket
-date: 2021-05-10T19:28:34.658Z
+date: 2021-06-01T19:28:34.658Z
 featuredImage: /img/1st-image.jpg
 type: work
 ---
