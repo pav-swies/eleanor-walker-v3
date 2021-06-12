@@ -9,7 +9,9 @@ const WorkLink = ({ entry }) => {
     <li>
       <article className={style.workLinkWrapper}>
         <div className={style.workLinkImage}>
-          <Link to={entry.fields.slug} className="faux-link"></Link>
+          <Link to={entry.fields.slug} className="faux-link">
+            <span>{entry.frontmatter.title}</span>
+          </Link>
           <GatsbyImage image={featuredImage} alt="" />
         </div>
         <div className={style.workLinkContent}>

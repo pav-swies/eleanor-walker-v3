@@ -11,10 +11,12 @@ const WorkTemplate = ({ location, data }) => {
     <Container location={location}>
       <Seo title={work.title} article={true} />
       <article className="work-wrapper">
-        <Link className="return-link" to="/work">
-          Back to work
-        </Link>
-        <h1>{work.title}</h1>
+        <header>
+          <Link className="return-link" to="/work">
+            Back to work
+          </Link>
+          <h1>{work.title}</h1>
+        </header>
         <div
           className="work-content-wrapper"
           dangerouslySetInnerHTML={{ __html: html }}

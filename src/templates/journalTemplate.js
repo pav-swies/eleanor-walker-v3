@@ -10,15 +10,22 @@ const JournalTemplate = ({ location, data }) => {
   const banner = getImage(journal.thumbnail);
   return (
     <Container location={location}>
-      <Seo title={journal.title} description={journal.subtitle} image={banner} article={true} />
+      <Seo
+        title={journal.title}
+        description={journal.subtitle}
+        image={banner}
+        article={true}
+      />
       <article className="journal-wrapper">
-        <Link className="return-link" to="/journal">
-          Back to journal
-        </Link>
-        <GatsbyImage image={banner} alt="" />
-        <h1>{journal.title}</h1>
-        <p className="journal-subtitle">{journal.subtitle}</p>
-        <p>{journal.date}</p>
+        <header>
+          <Link className="return-link" to="/journal">
+            Back to journal
+          </Link>
+          <GatsbyImage image={banner} alt="" />
+          <h1>{journal.title}</h1>
+          <p className="journal-subtitle">{journal.subtitle}</p>
+          <p>{journal.date}</p>
+        </header>
         <div
           className="content-wrapper"
           dangerouslySetInnerHTML={{ __html: html }}
