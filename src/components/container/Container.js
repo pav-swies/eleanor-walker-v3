@@ -8,7 +8,7 @@ const Container = ({ children, location }) => {
     <div className={style.container}>
       <Header location={location} />
       <main className={style.main}>{children}</main>
-      <Footer location={location} />
+      <Footer />
     </div>
   );
 };
