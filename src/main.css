@@ -12,6 +12,7 @@
   /* Spacing */
   --spacing-flea: 0.5rem;
   --spacing-ant: 1rem;
+  --spacing-beetle: 1.5rem;
   --spacing-mouse: 2rem;
   --spacing-gerbil: 3rem;
   --spacing-cat: 4rem;
@@ -272,11 +273,16 @@ p {
 }
 
 .journal-subtitle + p {
-  margin-bottom: var(--spacing-mouse);
+  margin-bottom: var(--spacing-beetle);
 }
 
 .journal-wrapper h1 {
   margin-bottom: 0;
+}
+
+.journal-wrapper header {
+  border-bottom: 1px solid var(--color-ghost);
+  margin-bottom: var(--spacing-beetle);
 }
 
 .work-wrapper h1 {
