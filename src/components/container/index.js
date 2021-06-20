@@ -1,7 +1,7 @@
 import React from 'react';
 import * as style from './container.module.css';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '../Header';
+import Footer from '../Footer';
 
 const Container = ({ children, location }) => {
   return (
