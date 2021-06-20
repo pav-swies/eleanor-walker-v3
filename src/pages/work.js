@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Container from 'components/container/Container';
-import WorkLink from 'components/work-link/WorkLink';
-import Seo from 'components/seo/Seo';
+import Container from 'components/Container';
+import WorkLink from 'components/WorkLink';
+import Seo from 'components/Seo';
 
 const WorkPage = ({ location, data }) => {
   const entries = data.allMarkdownRemark.edges;
