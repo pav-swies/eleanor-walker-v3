@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Container from '../components/Container';
-import JournalLink from '../components/JournalLink';
-import Seo from '../components/Seo';
+import Container from 'components/Container';
+import JournalLink from 'components/JournalLink';
+import Seo from 'components/Seo';
 
 const JournalPage = ({ location, data }) => {
   const entries = data.allMarkdownRemark.edges;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import Container from '../components/Container';
-import Seo from '../components/Seo';
+import Container from 'components/Container';
+import Seo from 'components/Seo';
 
 const JournalTemplate = ({ location, data }) => {
   const journal = data.markdownRemark.frontmatter;

@@ -11,6 +11,7 @@ module.exports = {
     instagramUsername: '@eleanorsofia_',
   },
   plugins: [
+    'gatsby-plugin-resolve-src',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
