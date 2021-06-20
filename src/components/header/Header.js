@@ -45,9 +45,7 @@ const Header = ({ location }) => {
   if (rootPath) {
     headerLogo = (
       <h1 className={style.headerTitle}>
-        <Link to="/">
-          {title}
-        </Link>
+        <Link to="/">{title}</Link>
       </h1>
     );
   } else {
