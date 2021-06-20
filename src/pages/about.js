@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import Container from 'components/Container';
-import Seo from 'components/Seo';
+import Container from '../components/container/Container';
+import Seo from '../components/seo/Seo';
 
 const JournalPage = ({ location }) => {
   return (
