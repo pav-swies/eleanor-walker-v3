@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import Container from '../components/container/Container';
-import JournalLink from '../components/journal-link/JournalLink';
-import Seo from '../components/seo/Seo';
+import Container from '../components/Container';
+import JournalLink from '../components/JournalLink';
+import Seo from '../components/Seo';
 
 const IndexPage = ({ location, data }) => {
   const entries = data.allMarkdownRemark.edges;
