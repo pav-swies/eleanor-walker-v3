@@ -1,7 +1,7 @@
 import React from 'react';
-import Container from '../components/container/Container';
-import ContactForm from '../components/contact-form/ContactForm';
-import Seo from '../components/seo/Seo';
+import Container from 'components/container/Container';
+import ContactForm from 'components/contact-form/ContactForm';
+import Seo from 'components/seo/Seo';
 
 const ContactPage = ({ location, data }) => {
   return (

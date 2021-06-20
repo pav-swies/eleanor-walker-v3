@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import Container from '../components/container/Container';
-import Seo from '../components/seo/Seo';
+import Container from 'components/container/Container';
+import Seo from 'components/seo/Seo';
 
 const WorkTemplate = ({ location, data }) => {
   const work = data.markdownRemark.frontmatter;

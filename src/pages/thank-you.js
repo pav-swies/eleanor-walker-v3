@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from '../components/container/Container';
-import Seo from '../components/seo/Seo';
+import Container from 'components/container/Container';
+import Seo from 'components/seo/Seo';
 
 const ThankYouPage = ({ location }) => {
   return (
