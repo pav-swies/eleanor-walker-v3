@@ -1,6 +1,7 @@
 :root {
   --site-max-width: 960px;
   --heading-letter-spacing: -0.02rem;
+  --content-max-width: 65ch;
 
   /* Font Sizes */
   --font-size-flea: 0.8rem;
@@ -196,6 +197,10 @@ p {
 
 .return-link {
   text-transform: lowercase;
+}
+
+.hero-intro p {
+  max-width: var(--content-max-width);
 }
 
 .hero-image {

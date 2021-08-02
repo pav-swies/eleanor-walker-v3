@@ -22,7 +22,7 @@ const JournalLink = ({ entry }) => {
             {entry.frontmatter.subtitle}
           </p>
           <p className={style.journalLinkDate}>{entry.frontmatter.date}</p>
-          <p>{entry.excerpt}</p>
+          <p className={style.journalLinkDescription}>{entry.excerpt}</p>
         </div>
       </article>
     </li>

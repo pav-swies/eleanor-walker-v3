@@ -10,7 +10,7 @@ const IndexPage = ({ location, data }) => {
   return (
     <Container location={location}>
       <Seo title="Home" />
-      <section>
+      <header>
         <div className="hero-intro">
           <p>
             I’m Eleanor, a curious handweaver & textile artist. I create
@@ -42,7 +42,7 @@ const IndexPage = ({ location, data }) => {
           quality="100"
         />
         <p className="hero-image-caption">Mindful Spring Blanket</p>
-      </section>
+      </header>
       <section>
         <h2>Latest Journal Entries</h2>
         <p>
