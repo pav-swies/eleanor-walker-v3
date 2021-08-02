@@ -4,4 +4,4 @@
 
 Built using Gatsby and Netlify CMS.
 
-[View Live](https://www.elsofia.co.uk/).
+<a href="https://www.elsofia.co.uk/" target="_blank">View Live: elsofia.co.uk</a>
