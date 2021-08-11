@@ -18,8 +18,8 @@ const IndexPage = ({ location, data }) => {
             and designed to feel good.
           </p>
           <p>
-            <Link to="/contact">Contact me here</Link> about commissions, or
-            find me on{' '}
+            <Link to="/contact">Contact me</Link> about commissions, or find me
+            on{' '}
             <a
               href="https://www.instagram.com/eleanorsofia_/"
               target="_blank"
